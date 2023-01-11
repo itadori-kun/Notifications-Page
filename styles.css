@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+    line-height: 1;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.main {
+    display: grid;
+    place-content: center;
+    background-color: var(--Very-light-grayish-blue);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.section {
+    width: 73rem;
+    height: 83.9rem;
+    background-color: var(--White);
+    border-radius: 1rem;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    padding: 3.3rem 3rem 3.1rem 3.2rem;
+}
+
+.headText {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: default;
+}
+
+.headText h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    color: var(--Very-dark-blue);
+}
+
+.headText p {
+    padding: .55rem 1.1rem;
+    background-color: var(--blue);
+    color: var(--White);
+    font-size: 1.6rem;
+    font-weight: 800;
+    border-radius: .5rem;
+}
+
+.mark-read {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+}
+
+/* extra margin */
+.m-t {
+    margin-top: 3.1rem !important;
+}
+
+/* styling each container class */
+.container {
+    width: 67rem;
+    height: fit-content;
+    margin: .6rem auto;
+    border-radius: .7rem;
+    padding: 1.7rem 0;
+}
+
+.holder {
+    width: 61.8rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+}
+
+.holder-img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    resize: both;
+}
+
+.holder-text {
+    width: 55.4rem;
+    height: fit-content;
+    position: relative;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: .3rem;
+    font-size: 1.6rem;
+    justify-content: space-between;
+
+}
+
+.wrap {
+    word-break: break-word;
+    width: fit-content;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .text {
+    width: fit-content;
+    display: block;
+}
+
+.text p {
+    width: fit-content;
+    font-size: 1.6rem !important;
+    line-height: 1.2;
+    display: inline;
+    margin-right: .15rem;
+}
+
+.new {
+    background-color: var(--Very-light-grayish-blue);
+}
+
+.new .dots {
+    border-radius: 50%;
+    background-color: var(--red);
+    padding: .4rem;
+    display: inline-block !important;
+    margin-left: .18rem;
+    margin-bottom: .18rem;
+}
+
+.dot-img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: .7rem;
+    cursor: pointer;
+}
+
+
+.reaction {
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.4;
+}
+
+.activity {
+    color: var(--Dark-grayish-blue);
+    width: fit-content;
+}
+.activity.diff{
+    color: var(--blue);
+}
+.name {
+    color: var(--Very-dark-blue);
+
+}
+
+.reuse-style {
+    cursor: pointer;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.time {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--Grayish-blue);
+    line-height: 1.5;
+    width: fit-content;
+    margin: 0;
+}
+
+.name:hover,
+.activity:hover,
+.mark-read:hover {
+    color: var(--blue);
+}
+
+.message {
+    width: 56.6rem;
+    height: fit-content;
+    margin: 1.3rem 2rem 2rem 8.4rem;
+    padding: 1.5rem 2rem;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--Dark-grayish-blue);
+    border-radius: .5rem;
+    border: .1rem solid var(--Light-grayish-blue-2);
+    cursor: pointer;
+}
+
+.message:hover {
+    background-color: var(--Light-grayish-blue-1);
+}
+
+@media only screen and (max-width:740px) and (min-width:461px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .section {
+        width: 95vw;
+        height: 100%;
+    }
+
+    .container {
+        width: 94%;
+
+    }
+
+    .holder {
+        width: 90%;
+    }
+
+    .message {
+        width: 85%;
+        margin: 1.3rem 2rem 2rem 6rem;
+        padding: 1.4rem;
+    }
+
+    .holder-text {
+        width: 97%;
+    }
+
+    .headText h1 {
+        font-size: 2rem;
+    }
+
+    .headText p {
+        padding: .55rem 1.1rem;
+        font-size: 1.4rem;
+    }
+
+    .mark-read {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media only screen and (max-width:460px) {
+    html {
+        font-size: 50%;
+    }
+
+    .section {
+        width: 95vw;
+        height: 100%;
+    }
+
+    /* Header styling */
+    .header {
+        height: 3.1rem;
+        width: 100%;
+        margin: 3rem 0;
+        padding: 0 2rem;
+    }
+
+    .headText h1 {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+
+    .headText p {
+        padding: .55rem 1.52rem;
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .mark-read {
+        font-size: 1.76rem;
+        line-height: 1.25;
+    }
+
+    /* section styling */
+    .m-t {
+        margin-top: 0 !important;
+    }
+
+    .container {
+        width: 42.875rem;
+        height: fit-content;
+        margin: .6rem auto;
+        border-radius: .7rem;
+        padding: 2rem 0;
+    }
+
+    .holder {
+        width: 37.625rem;
+        margin: 0 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.625rem;
+    }
+
+    .time,
+    .text p {
+        font-size: 1.75rem !important;
+        line-height: 1.4;
+    }
+
+    .text {
+        padding-right: .5rem;
+    }
+
+    .holder-img {
+        width: 4.875rem;
+        height: 4.875rem;
+    }
+
+    .img {
+        width: 4.8rem;
+    }
+
+    .message {
+        width: 32.875rem;
+        margin: 1.5rem 2rem 0 8.4rem;
+        padding: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.3;
+        border-radius: .625rem;
+        border: .125rem solid var(--Light-grayish-blue-2);
+    }
+}
